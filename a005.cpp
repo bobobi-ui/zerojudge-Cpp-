@@ -1,0 +1,39 @@
+#include<stdio.h> 
+#include<stdlib.h>
+
+int main()
+{
+	int a,i,j,n=0,m=0,bb;
+	float gg;
+	
+	scanf("%d",&a);
+	int b[a][4];
+	for(i=0;i<a;i++){
+		for(j=0;j<4;j++){
+			scanf("%d",&b[i][j]);
+		}	
+	}
+	
+	for(i=0;i<a;i++){
+		if(b[i][1]-b[i][0]==b[i][2]-b[i][1]&&b[i][3]-b[i][2]==b[i][2]-b[i][1]&&b[i][3]-b[i][2]==b[i][1]-b[i][0])
+		{
+			bb=b[i][1]-b[i][0];
+			for(j=0;j<4;j++)
+				printf("%d ",b[i][j]);
+			printf("%d\n",b[i][3]+bb);
+		}
+		
+		else if(b[i][2]*b[i][0] == b[i][1]*b[i][1] && b[i][3]*b[i][1] == b[i][2]*b[i][2])
+		{
+		gg=b[i][1]/b[i][0];
+		for(j=0;j<4;j++)
+			printf("%d ",b[i][j]);
+		printf("%.f\n",b[i][3]*gg);
+		}	
+	}
+	
+	
+
+	
+	return 0;
+}
