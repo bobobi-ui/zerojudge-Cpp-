@@ -1,15 +1,12 @@
 #include<stdio.h>
 #include<stdlib.h>
-//¥u»İ¶]¨ì®Ú¸¹i´N¦æ
-	//¦]¬°j¬O¦]¼Æ¡A¨º i/j ¤]¬O
-	/*¨Ò¦p36=1*36 
+//åªéœ€è·‘åˆ°æ ¹è™Ÿiå°±è¡Œ
+	//å› ç‚ºjæ˜¯å› æ•¸ï¼Œé‚£ i/j ä¹Ÿæ˜¯
+	/*ä¾‹å¦‚36=1*36 
 			=2*18
 			=3*12
 			=4*9
-			=6*6
-			
-	±zªºµª®×¬°: Between 7506613 and 7508267, 12540528 has a maximum of 320 divisors.
-	¥¿½Tµª®×¬°: Between 7506613 and 7508267, 7507500 has a maximum of 240 divisors.*/ 
+			=6*6*/ 
 int main(){
 	
 	long long int i,j,l,u,d,max,p=0,n,k;
@@ -40,3 +37,4 @@ int main(){
 	
 	return 0;
 }
+
