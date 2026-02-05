@@ -42,13 +42,18 @@ int main(){
 			printf("Illegal move\n");
 			continue;
 		}	
-		if(qr==kr && k<max(q,n) && k>min(q,n)){
-			printf("Illegal move\n");
-			continue;
+
+		if (qr == nr) { // horizontal move
+			if (kr == qr && kc > min(qc, nc) && kc < max(qc, nc)) {
+				printf("Illegal move\n");
+				continue;
+			}
 		}
-		if(qc==kc && k<max(q,n) && k>min(q,n)){
-			printf("Illegal move\n");
-			continue;
+		if (qc == nc) { // vertical move
+			if (kc == qc && kr > min(qr, nr) && kr < max(qr, nr)) {
+				printf("Illegal move\n");
+				continue;
+			}
 		}
 		
 		//Move not allowed
